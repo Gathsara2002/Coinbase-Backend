@@ -4,7 +4,7 @@ import mysql.connector
 app = Flask(__name__)
 
 # Simulated wallet balance and transaction records for demo
-wallet_balance = 1000.0
+wallet_balance = 1000000.0
 transactions = []  # List to store all transaction records
 
 # Get wallet balance (no user_id needed)
