@@ -121,6 +121,12 @@ def test():
     print("Test route called.")
     return jsonify({'status': 'success', 'message': 'API is running!'}), 200
 
+@app.route('/new-api', methods=['GET'])
+def test():
+    print("New API route called.")
+    return jsonify({'status': 'success', 'message': 'API is running!'}), 200
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
